@@ -1,0 +1,154 @@
+body {
+  background: #121212;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 4em;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bottle {
+  margin: auto;
+  perspective: 25em;
+  position: relative;
+  width: 11em;
+  height: 11em;
+}
+
+.container,
+.latters {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-style: preserve-3d;
+}
+
+.container {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(90deg) rotateX(-90deg);
+  animation: spin 1s linear infinite;
+}
+
+.latters {
+  display: flex;
+}
+
+.latters:nth-child(1) {
+  transform: translateY(-50%) rotateX(0deg);
+}
+
+.latters:nth-child(2) {
+  transform: translateY(-50%) rotateX(36deg);
+}
+
+.latters:nth-child(3) {
+  transform: translateY(-50%) rotateX(72deg);
+}
+
+.latters:nth-child(4) {
+  transform: translateY(-50%) rotateX(108deg);
+}
+
+.latters:nth-child(5) {
+  transform: translateY(-50%) rotateX(144deg);
+}
+
+.latters:nth-child(6) {
+  transform: translateY(-50%) rotateX(180deg);
+}
+
+.latters span {
+  backface-visibility: hidden;
+  display: inline-block;
+  width: 1ch;
+}
+
+.latters span:nth-child(1) {
+  transform: translateZ(2ch) rotateY(0) scaleY(1);
+}
+
+.latters span:nth-child(2) {
+  transform: translateZ(2ch) rotateY(0) scaleY(1);
+}
+
+.latters span:nth-child(3) {
+  transform: translateZ(2.25ch) rotateY(-30deg) scaleY(1);
+}
+
+.latters span:nth-child(4) {
+  transform: translateZ(2.75ch) rotateY(-30deg) scaleY(1.3);
+}
+
+.latters span:nth-child(5) {
+  transform: translateZ(3.25ch) rotateY(-30deg) scaleY(1.5);
+}
+
+.latters span:nth-child(6) {
+  transform: translateZ(3.5ch) rotateY(-30deg) scaleY(1.75);
+}
+
+.latters span:nth-child(7) {
+  transform: translateZ(3.5ch) rotateY(0deg) scaleY(1.45);
+}
+
+.latters span:nth-child(8) {
+  transform: translateZ(3.5ch) rotateY(0deg) scaleY(1.75);
+}
+
+.latters span:nth-child(9) {
+  transform: translateZ(3.3ch) rotateY(15deg) scaleY(1.5);
+}
+
+.latters span:nth-child(10) {
+  transform: translateZ(3ch) rotateY(15deg) scaleY(1.4);
+}
+
+.latters span:nth-child(11) {
+  transform: translateZ(2.8ch) rotateY(0deg) scaleY(1.3);
+}
+
+.latters span:nth-child(12) {
+  transform: translateZ(2.8ch) rotateY(0deg) scaleY(1.3);
+}
+
+.latters span:nth-child(13) {
+  transform: translateZ(3ch) rotateY(-15deg) scaleY(1.4);
+}
+
+.latters span:nth-child(14) {
+  transform: translateZ(3.3ch) rotateY(-15deg) scaleY(1.5);
+}
+
+.latters span:nth-child(15) {
+  transform: translateZ(3.5ch) rotateY(0deg) scaleY(1.75);
+}
+
+.latters span:nth-child(16) {
+  transform: translateZ(3.4ch) rotateY(15deg) scaleY(1.75);
+}
+
+.latters span:nth-child(17) {
+  transform: translateZ(3.2ch) rotateY(15deg) scaleY(1.5);
+}
+
+.latters span:nth-child(18) {
+  transform: translateZ(3ch) rotateY(0deg) scaleY(1.3);
+}
+
+.latters span:nth-child(19) {
+  transform: translateZ(3ch) rotateY(0deg) scaleY(1.3);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(90deg) rotateX(-90deg);
+  }
+
+  to {
+    transform: rotateZ(90deg) rotateX(-54deg);
+  }
+}
